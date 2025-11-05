@@ -109,26 +109,30 @@ const questions = [
 const results = [
   {
     range: [0, 3],
-    title: "여전히 활력 있는 상태",
-    message: "퇴사 신호는 약한 편이에요. 지금의 장점을 더 살리고, 가끔 찾아오는 회의감은 주변과 공유하며 풀어보세요.",
+    title: "워라밸 지킴이 모드",
+    message:
+      "퇴사 레이더는 아직 조용! 지금 페이스를 유지하면서 스몰 힐링 루틴을 하나 더 추가해 보세요.\n일 잘하는 나, 아직 멋지게 활약 중입니다.",
     image: "assets/result-green.svg"
   },
   {
     range: [4, 7],
-    title: "주의가 필요한 균열",
-    message: "조심스러운 균열이 보입니다. 원인을 구체적으로 적어보고 조직 안에서 해결할 수 있는 방법을 먼저 탐색해 보세요.",
+    title: "미세 균열 주의보",
+    message:
+      "요즘 살짝 삐걱거리는 기분이 들죠? 내 텐션을 갉아먹는 포인트를 메모해 두고, 대화나 제도 개선 같은 현실적 카드부터 꺼내 보세요.",
     image: "assets/result-amber.svg"
   },
   {
     range: [8, 11],
-    title: "떠날 준비를 하는 마음",
-    message: "이직 레이더가 활발히 작동하는 단계예요. 경력 목표를 정리하고 네트워킹, 이력서 업데이트 등 현실적인 준비를 시작해 보세요.",
+    title: "이직 탐색 ON",
+    message:
+      "마음은 이미 다른 우주로 여행 중이네요. 커리어 키워드를 정리하고, 포트폴리오와 프로필을 최신 텐션으로 리부트해 보세요.",
     image: "assets/result-pink.svg"
   },
   {
     range: [12, 15],
-    title: "이미 떠난 마음",
-    message: "몸만 남은 상태에 가까워요. 심리적 소진이 크기 때문에, 휴식과 회복을 최우선으로 하고 새로운 환경을 적극적으로 탐색해 보세요.",
+    title: "굿바이 카운트다운",
+    message:
+      "퇴사 버튼에 손이 올라간 상태! 번아웃을 더 키우기 전에, 회복 시간을 확보하고 내가 원하는 라이프스타일에 맞는 다음 스테이지를 적극 탐색해 보세요.",
     image: "assets/result-red.svg"
   }
 ];
@@ -269,7 +273,7 @@ async function shareResult() {
 
   const shareData = {
     title: "퇴사 신호 자가 진단 결과",
-    text: `${resultTitleText}\n나의 퇴사 신호는 어느 단계일까요?`,
+    text: `${resultTitleText}\n내 퇴사 바이브, 어디까지 왔는지 같이 확인해 볼래?`,
     url: shareUrl.toString()
   };
 
