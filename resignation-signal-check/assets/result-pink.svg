@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f47ab1" />
-      <stop offset="100%" stop-color="#f9a7d5" />
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="pinkHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdf2f8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ede9fe" stop-opacity="0.6" />
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="72" fill="url(#grad)" />
-  <path d="M168 180c0 48 88 68 88 108s-40 68-88 68" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M344 180c0 48-88 68-88 108s40 68 88 68" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="256" cy="128" r="40" fill="rgba(255,255,255,0.22)" />
+  <rect width="512" height="512" rx="80" fill="url(#pinkGradient)" />
+  <circle cx="148" cy="138" r="44" fill="rgba(255,255,255,0.25)" />
+  <circle cx="380" cy="132" r="52" fill="rgba(255,255,255,0.2)" />
+  <path d="M176 210l64 24" stroke="rgba(255,255,255,0.65)" stroke-width="18" stroke-linecap="round" />
+  <path d="M336 210l-64 24" stroke="rgba(255,255,255,0.65)" stroke-width="18" stroke-linecap="round" />
+  <path d="M176 296c18-18 46-30 76-30s58 12 76 30" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="20" stroke-linecap="round" />
+  <path d="M152 354c30 38 74 58 100 58s70-20 100-58" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="18" stroke-linecap="round" />
+  <path d="M124 392c40 44 100 72 132 72s92-28 132-72" fill="none" stroke="url(#pinkHighlight)" stroke-width="26" stroke-linecap="round" />
 </svg>
