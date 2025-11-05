@@ -1,21 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="redBackground" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fb7185" />
       <stop offset="100%" stop-color="#ef4444" />
     </linearGradient>
-    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fee2e2" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#fecdd3" stop-opacity="0.6" />
+    <linearGradient id="redShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.35)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0)" />
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="80" fill="url(#redGradient)" />
-  <circle cx="140" cy="132" r="50" fill="rgba(255,255,255,0.24)" />
-  <circle cx="380" cy="128" r="40" fill="rgba(255,255,255,0.18)" />
-  <path d="M168 212l72 32" stroke="rgba(255,255,255,0.7)" stroke-width="20" stroke-linecap="round" />
-  <path d="M344 212l-72 32" stroke="rgba(255,255,255,0.7)" stroke-width="20" stroke-linecap="round" />
-  <path d="M188 312c22-26 52-40 76-40s54 14 76 40" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="22" stroke-linecap="round" />
-  <path d="M148 368c34 40 84 64 116 64s82-24 116-64" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="20" stroke-linecap="round" />
-  <path d="M120 406c44 50 108 78 136 78s92-28 136-78" fill="none" stroke="url(#redAccent)" stroke-width="26" stroke-linecap="round" />
-  <path d="M224 388h64" stroke="rgba(255,255,255,0.5)" stroke-width="16" stroke-linecap="round" />
+  <rect width="512" height="512" rx="80" fill="url(#redBackground)" />
+  <ellipse cx="256" cy="424" rx="172" ry="60" fill="rgba(0,0,0,0.2)" />
+  <g transform="translate(112 88)">
+    <path d="M144 32c-78 0-136 66-136 148 0 74 40 140 92 162h88c52-22 92-88 92-162 0-82-58-148-136-148z" fill="#0f172a" />
+    <ellipse cx="144" cy="204" rx="110" ry="132" fill="#ffffff" />
+    <path d="M56 228c12 16 26 24 46 24 34 0 60-30 60-66 0-22-6-44-16-64-44 12-74 48-90 106z" fill="#f1f5f9" opacity="0.85" />
+    <path d="M232 228c-12 16-26 24-46 24-34 0-60-30-60-66 0-22 6-44 16-64 44 12 74 48 90 106z" fill="#f1f5f9" opacity="0.85" />
+    <path d="M100 132c-18-10-40-10-60 4" stroke="#0f172a" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M188 132c18-10 40-10 60 4" stroke="#0f172a" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M120 144c-12-16-8-36 10-46 20-12 52-12 72 0 18 10 22 30 10 46-18-10-32-12-46-12s-28 2-46 12z" fill="#0f172a" />
+    <ellipse cx="116" cy="162" rx="16" ry="20" fill="#0f172a" />
+    <ellipse cx="176" cy="162" rx="16" ry="20" fill="#0f172a" />
+    <circle cx="116" cy="158" r="6" fill="#f8fafc" />
+    <circle cx="176" cy="158" r="6" fill="#f8fafc" />
+    <path d="M136 182c10 10 22 14 36 14s26-4 36-14" stroke="#f97316" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M146 192c-4 8-6 14-6 24 0 18 12 32 28 32s28-14 28-32c0-10-2-16-6-24-6 4-14 6-22 6s-16-2-22-6z" fill="#f97316" />
+    <path d="M64 244h164v100c0 24-20 44-44 44h-76c-24 0-44-20-44-44V244z" fill="#ef4444" />
+    <path d="M64 244h164v38H64z" fill="#dc2626" />
+    <path d="M188 310l74-42c6-4 14-2 18 4 4 6 2 14-4 18l-64 36z" fill="#f8fafc" />
+    <path d="M188 310l28 26-48 28z" fill="#e2e8f0" />
+    <path d="M108 340h96" stroke="#0f172a" stroke-width="12" stroke-linecap="round" />
+    <path d="M52 318c-14 0-24-12-24-26 0-78 54-144 120-164" stroke="rgba(255,255,255,0.55)" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M236 318c14 0 24-12 24-26 0-78-54-144-120-164" stroke="rgba(255,255,255,0.38)" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M108 360c8 22 26 34 48 34s40-12 48-34" stroke="#f87171" stroke-width="12" stroke-linecap="round" fill="none" />
+  </g>
+  <rect x="48" y="48" width="416" height="416" rx="84" fill="url(#redShadow)" opacity="0.08" />
 </svg>
