@@ -184,10 +184,14 @@ function updateQuestion() {
   progressFill.style.width = `${progressPercent}%`;
 }
 
-function handleAnswer(choiceIndex) {
+function handleAnswer(choiceIndex, button) {
   const current = questions[state.currentIndex];
   const value = Number(current.options[choiceIndex].value);
   const previousSelection = state.selections[state.currentIndex];
+
+  if (button) {
+    button.blur();
+  }
 
   if (previousSelection !== undefined) {
     const previousValue = Number(current.options[previousSelection].value);
@@ -299,7 +303,9 @@ async function shareResult() {
 startBtn.addEventListener("click", resetQuiz);
 
 answerButtons.forEach((button, index) => {
-  button.addEventListener("click", () => handleAnswer(index));
+  button.addEventListener("click", (event) =>
+    handleAnswer(index, event.currentTarget)
+  );
 });
 
 restartBtn.addEventListener("click", restartApp);
