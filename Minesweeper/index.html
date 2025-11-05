@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1>Minesweeper</h1>
+            <div class="controls">
+                <div class="status">
+                    <span class="emoji" id="statusEmoji">😊</span>
+                    <span class="label">Status</span>
+                </div>
+                <div class="info">
+                    <div class="info-item">
+                        <span class="label">Mines</span>
+                        <span id="mineCounter">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Time</span>
+                        <span id="timer">0</span>
+                    </div>
+                </div>
+                <div class="settings">
+                    <label>
+                        Width
+                        <input type="number" id="widthInput" min="5" max="30" value="10" />
+                    </label>
+                    <label>
+                        Height
+                        <input type="number" id="heightInput" min="5" max="30" value="10" />
+                    </label>
+                    <label>
+                        Mines
+                        <input type="number" id="minesInput" min="5" max="200" value="15" />
+                    </label>
+                    <button id="newGameButton">New Game</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="board" class="board"></div>
+        </main>
+        <footer>
+            <p>
+                Left click to reveal a tile. Right click (or long press on mobile) to flag a tile.
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
