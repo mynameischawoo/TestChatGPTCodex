@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>퇴사 신호 자가 진단</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="landing-view" class="view view--active">
+      <div class="landing-card">
+        <h1>퇴사 신호 자가 진단</h1>
+        <p>직장에서 보내는 오늘, 혹시 이미 마음은 떠났나요? 15가지 질문으로 지금의 상태를 점검해 보세요.</p>
+        <button id="start-btn" class="primary-btn">검사 시작</button>
+      </div>
+    </section>
+
+    <section id="quiz-view" class="view">
+      <div class="quiz-card">
+        <div class="quiz-progress">
+          <span id="progress-count">1</span>
+          <span class="quiz-total">/ 15</span>
+          <div class="progress-bar">
+            <div id="progress-fill"></div>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <h2 id="question-text"></h2>
+        </div>
+        <div class="answer-buttons">
+          <button class="answer-btn" data-choice="0"></button>
+          <button class="answer-btn" data-choice="1"></button>
+        </div>
+        <button id="restart-btn" class="ghost-btn">처음으로</button>
+      </div>
+    </section>
+
+    <section id="result-view" class="view">
+      <div class="result-card">
+        <div class="result-media">
+          <img id="result-image" alt="결과 이미지" />
+        </div>
+        <div class="result-content">
+          <h2 id="result-title"></h2>
+          <p id="result-message"></p>
+          <button id="share-btn" class="primary-btn">결과 공유</button>
+          <button id="retry-btn" class="ghost-btn">다시 검사하기</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="modal-close" class="primary-btn">확인</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
