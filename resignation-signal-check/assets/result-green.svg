@@ -1,19 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="greenBackground" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#34d399" />
       <stop offset="100%" stop-color="#22d3ee" />
     </linearGradient>
-    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f0fdfa" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#cffafe" stop-opacity="0.6" />
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.35)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0)" />
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="80" fill="url(#greenGradient)" />
-  <circle cx="140" cy="136" r="48" fill="rgba(255,255,255,0.28)" />
-  <circle cx="396" cy="116" r="36" fill="rgba(255,255,255,0.18)" />
-  <path d="M148 322c26 42 72 70 112 70s80-28 106-70" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="18" stroke-linecap="round" />
-  <path d="M176 234c0-22 18-40 40-40s40 18 40 40" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="18" stroke-linecap="round" />
-  <path d="M292 234c0-22 18-40 40-40s40 18 40 40" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="18" stroke-linecap="round" />
-  <path d="M118 364c32 42 86 74 138 74s100-32 132-74" fill="none" stroke="url(#greenAccent)" stroke-width="26" stroke-linecap="round" />
+  <rect width="512" height="512" rx="80" fill="url(#greenBackground)" />
+  <ellipse cx="256" cy="420" rx="160" ry="54" fill="rgba(0,0,0,0.12)" />
+  <g transform="translate(128 96)">
+    <path d="M128 32c-70 0-120 58-120 130 0 64 32 120 76 140h88c44-20 76-76 76-140 0-72-50-130-120-130z" fill="#0f172a" />
+    <ellipse cx="128" cy="188" rx="98" ry="118" fill="#ffffff" />
+    <path d="M44 206c8 10 20 18 36 18 28 0 48-26 48-56 0-16-4-34-10-50-36 8-62 40-74 88z" fill="#f1f5f9" opacity="0.85" />
+    <path d="M212 206c-8 10-20 18-36 18-28 0-48-26-48-56 0-16 4-34 10-50 36 8 62 40 74 88z" fill="#f1f5f9" opacity="0.85" />
+    <ellipse cx="94" cy="138" rx="16" ry="20" fill="#0f172a" />
+    <ellipse cx="162" cy="138" rx="16" ry="20" fill="#0f172a" />
+    <circle cx="94" cy="134" r="6" fill="#f8fafc" />
+    <circle cx="162" cy="134" r="6" fill="#f8fafc" />
+    <path d="M118 154c8 8 18 12 28 12s20-4 28-12" stroke="#f97316" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M124 164c-2 4-4 10-4 16 0 14 12 26 26 26s26-12 26-26c0-6-2-12-4-16-6 4-14 6-22 6s-16-2-22-6z" fill="#f97316" />
+    <path d="M48 214h160v88c0 18-14 32-32 32h-96c-18 0-32-14-32-32v-88z" fill="#ef4444" />
+    <path d="M48 214h160v32H48z" fill="#dc2626" />
+    <path d="M164 274l60-32c6-4 14-2 18 4 4 6 2 14-4 18l-52 30z" fill="#f8fafc" />
+    <path d="M164 274l22 20-38 22z" fill="#e2e8f0" />
+    <path d="M88 302h80" stroke="#0f172a" stroke-width="12" stroke-linecap="round" />
+    <path d="M36 284c-10 0-18-8-18-18 0-62 44-120 98-134" stroke="rgba(255,255,255,0.6)" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M220 284c10 0 18-8 18-18 0-62-44-120-98-134" stroke="rgba(255,255,255,0.4)" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M84 340c6 18 22 30 44 30s38-12 44-30" stroke="#facc15" stroke-width="12" stroke-linecap="round" fill="none" />
+  </g>
+  <rect x="60" y="60" width="392" height="392" rx="72" fill="url(#shadowGradient)" opacity="0.08" />
 </svg>
